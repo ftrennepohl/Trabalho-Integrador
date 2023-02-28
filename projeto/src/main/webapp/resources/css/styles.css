@@ -1,0 +1,141 @@
+:root{
+    font-size: 62.5%;
+    --content-background: lightgrey;
+}
+
+html,
+body {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+body{
+    font-size: 1.6rem !important;
+}
+
+h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2.4rem;
+    font-weight: 550;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+ul{
+    border-bottom-width: 2px !important;
+}
+
+.nav-link{
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.nav-link.active {
+    color: black !important;
+    background-color: white !important;
+}
+
+#main-content-wrapper{
+    background-color: var(--content-background);
+}
+
+.content{
+    display: none;
+}
+
+.content div h2{
+    display: inline;
+    margin-bottom: 1rem;
+}
+
+.content div p{
+    margin: 0;
+}
+
+#tarefas.active,
+#processos.active,
+#clientes.active,
+#cadastro-clientes.active{
+    display: flex;
+}
+
+#tarefas .col-md-6,
+#processos .col-md-6,
+#clientes .col-md-6,
+#financeiro .col-md-6 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+
+#tarefas .col-md-6 div,
+#processos .col-md-6 div,
+#clientes .col-md-6 div,
+#financeiro .col-md-6 div{
+    background-color: white;
+    border-radius: 1.5rem;
+    border: 0.2rem !important;
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    min-width: unset;
+    padding: 1.2rem !important;
+}
+
+.campos-input div{
+    margin-inline: 3rem;
+}
+
+#cadastro-clientes form div{
+    display: inline !important;
+    margin-inline: 2.5rem;
+    margin-block: 2rem;
+}
+
+#cadastro-clientes form div label{
+    display: inline;
+}
+
+#cadastro-processos form div div{
+    display: inline !important;
+    margin-inline: 3rem;
+    margin-block: 2rem;
+}
+
+#cadastro-processos form div div label{
+    display: inline;
+}
+
+#cadastro-tarefas form div div{
+    display: inline !important;
+    margin-inline: 3rem;
+    margin-block: 2rem;
+}
+
+#cadastro-tarefas form div div label{
+    display: inline;
+}
+
+.botoes-financeiro input{
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.botoes-financeiro label{
+    margin-right: 1.5rem;
+}
+
+#dock-bar{
+    background-color: var(--content-background);
+    height: var(--dock-bar-height);
+    right: 0 !important;
+    bottom: 0 !important;
+}
